@@ -1,0 +1,33 @@
+name: CI/CD Initiative Tracker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 1. Baixar o Código (Action 1)
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar o Ambiente Node.js (Action 2)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 3. Instalar dependências dos testes
+        run: npm install
+
+      - name: 4. Executar Testes Automatizados (CI)
+        run: npm test
+
+      - name: 5. Publicar no GitHub Pages (Action 3)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./

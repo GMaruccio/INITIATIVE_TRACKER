@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #cdd6f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background-color: #313244;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #f38ba8;
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1 1 40%;
+    padding: 10px;
+    border: 1px solid #45475a;
+    border-radius: 5px;
+    background-color: #181825;
+    color: #cdd6f4;
+}
+
+button {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: #f38ba8;
+    color: #11111b;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #eba0ac;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #45475a;
+}
+
+th {
+    background-color: #181825;
+    color: #f38ba8;
+}
+
+.btn-remover {
+    background-color: #e78284;
+    color: #11111b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    flex: none;
+}

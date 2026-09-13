@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiative Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Initiative Tracker</h1>
+        
+        <div class="form-group">
+            <input type="text" id="nome" placeholder="Nome (ex: Goblin, Jogador)">
+            <input type="number" id="iniciativa" placeholder="Iniciativa">
+            <input type="number" id="ca" placeholder="CA (Armadura)">
+            <input type="number" id="hp" placeholder="HP (Vida)">
+            <button onclick="adicionarCombatente()">Adicionar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Iniciativa</th>
+                    <th>Nome</th>
+                    <th>CA</th>
+                    <th>HP</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="lista-combate">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,5 @@
 let combatentes = [];
 
-// Função pura de ordenação (ideal para testes unitários)
 function ordenarCombatentes(lista) {
     return [...lista].sort((a, b) => b.iniciativa - a.iniciativa);
 }
